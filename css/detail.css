@@ -151,7 +151,6 @@ ul {
   border-radius: 24px;
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .banner p {
@@ -176,24 +175,27 @@ ul {
   border-radius: 24px;
   width: 576px;
   height: 628px;
-  object-fit: cover;
 }
 
 .ss__img .right .top {
   margin-bottom: 20px;
 }
+
 .ss__img .right .top img {
   border-radius: 24px;
   width: 336px;
   height: 259px;
-  object-fit: cover;
 }
 
 .ss__img .right .down img {
   border-radius: 24px;
   width: 336px;
   height: 345px;
-  object-fit: cover;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
 }
 
 .criteria {
@@ -274,7 +276,6 @@ ul {
 .card .img img {
   width: 336px;
   height: 220px;
-  object-fit: cover;
   border-radius: 24px;
 }
 
@@ -352,22 +353,18 @@ ul {
 }
 
 @media only screen and (max-width: 768px) {
-  /* .ss__img {
+  .ss__img {
     display: flex;
     justify-content: space-between;
+    max-width: 768px;
     width: 80%;
     margin: 0 auto;
-  } */
+  }
 
   .ss__img .left img {
     border-radius: 24px;
     width: 456px;
     height: 497px;
-    object-fit: cover;
-  }
-
-  .ss__img .left {
-    margin-right: 20px;
   }
 
   .ss__img .right .top {
@@ -375,21 +372,19 @@ ul {
   }
 
   .ss__img .right .top img {
-    border-radius: 34px;
+    border-radius: 24px;
     width: 216px;
     height: 216px;
-    object-fit: cover;
   }
 
   .ss__img .right .down img {
     border-radius: 24px;
     width: 216px;
-    height: 357px;
-    object-fit: cover;
+    height: 257px;
   }
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 500px) {
   .ss__img {
     display: block;
   }
@@ -398,7 +393,6 @@ ul {
     border-radius: 24px;
     width: 331px;
     height: 360px;
-    object-fit: cover;
   }
 
   .ss__img .right {
@@ -410,14 +404,12 @@ ul {
     border-radius: 16px;
     width: 161px;
     height: 161px;
-    object-fit: cover;
   }
 
   .ss__img .right .down img {
     border-radius: 16px;
     width: 161px;
     height: 161px;
-    object-fit: cover;
   }
 
   .category .right-item {
