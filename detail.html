@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/detail.css" />
+    <link rel="stylesheet" href="./css/reponsive.css" />
   </head>
   <body>
     <header>
-      <div class="hamburger" id="hamburger">&#9776;</div>
+      <div class="icon_menu">
+        <img src="./images/icon/menu.png" alt="" />
+        <img class="logo" src="./images/icon/logo.png" alt="" />
+      </div>
       <div class="header-left">
         <ul>
           <li>
@@ -21,34 +25,46 @@
             <a href="">Khám phá</a>
           </li>
           <li>
-            <a href="">Blog</a>
+            <a href="" class="active">Blog</a>
           </li>
         </ul>
       </div>
-      <div class="header-center">Review nhà</div>
+
+      <div class="header-center">
+        <img src="./images/icon/logo.png" alt="" />
+      </div>
+
       <div class="header-right">
-        <ul>
-          <li>&#x1F514;</li>
-          <li>&#x2764;</li>
-          <li><button>Đăng bài</button></li>
-          <li class="user-info">
-            <div class="user-details">
-              <p>Quang van tran</p>
-              <p>Tư vấn</p>
-            </div>
-            <img src="./images/icon/user.jpg" alt="" class="user-img" />
-          </li>
-        </ul>
+        <div class="logo_notifi">
+          <img src="./images/icon/notify.png" alt="" />
+        </div>
+        <div class="logo_heart">
+          <img src="./images/icon/heart-black.png" alt="" />
+        </div>
+        <div class="post_item">
+          <button>Đăng bài</button>
+        </div>
+        <div class="user">
+          <div class="user_left">
+            <span class="">Phạm Anh Tuấn</span>
+            <span class="level">Intern</span>
+          </div>
+          <div class="user_right">
+            <img src="./images/icon/user.jpg" alt="" />
+          </div>
+        </div>
       </div>
     </header>
 
     <main>
       <section class="ss__1">
         <div class="line__1">
-          <div class="return">&#60; Quay lại</div>
+          <div class="return">&#60; <a>Quay lại</a></div>
           <div class="cate">
-            Chuyên mục:
-            <span>Xã hội</span>
+            <span>Chuyên mục:</span>
+            <div class="cate__child">
+              <a href="#">Xã hội</a>
+            </div>
           </div>
         </div>
 
@@ -57,20 +73,22 @@
         </div>
 
         <div class="line__3">
-          <ul>
-            <li>Xã hội</li>
+          <ul class="info">
+            <li>
+              <a href="#">Xã hội</a>
+            </li>
             <li>Quang anh tran</li>
             <li>24/02/2020</li>
           </ul>
           <ul class="function">
             <li class="mail">
-              <a>&#x1F514; <span>Gửi mail</span></a>
+              <a> <img src="./images/icon/mail.png" alt="" /> <span>Gửi mail</span></a>
             </li>
             <li class="share">
-              <a>&#x2764; <span>Chia sẻ</span></a>
+              <a><img src="./images/icon/facebook.png" alt="" /> <span>Chia sẻ</span></a>
             </li>
             <li class="save">
-              <a>&#x2764; <span>Lưu</span></a>
+              <a><img src="./images/icon/heart-black.png" alt="" /> <span>Lưu</span></a>
             </li>
           </ul>
         </div>
@@ -156,89 +174,152 @@
         </ul>
       </section>
 
-      <section class="category">
-        <ul class="cate-title">
-          <li class="left-item">Tin chuyên mục: <button>Xã hội</button></li>
-          <li class="right-item"><p>Xem tất cả</p></li>
-        </ul>
+      <div class="list__post">
+        <div class="related-news">
+          <div class="related-news__section">
+            <h2 class="related-news__title">Tin cùng chuyên mục</h2>
+            <div class="border">
+              <a class="related-news__link" href="#">Xã hội</a>
+            </div>
+          </div>
+          <div class="related-news__section">
+            <a href="#" class="show-375px"> > </a>
+            <a href="#" class="related-news__view-all">Xem tất cả</a>
+          </div>
+        </div>
+        <div class="post__child">
+          <div class="show-375px">
+            <span class="text__line-1">Making a Housing Wage: Where Teachers, First Responders and Restaurant Workers Can Live Where They Work</span>
+            <div class="text__line-2">
+              <span class="text__line-2__spanf">Xã hội</span>
+              <span class="text__line-2__spans">Quang Anh Tran</span>
+              <span class="text__line-2__spant">20/02/2020</span>
+            </div>
+          </div>
+          <div class="post__child-item">
+            <div class="left">
+              <img class="icon" src="./images/icon/heart-white.png" alt="" />
+              <img class="img-child" src="./images/posts/post1.png" alt="" />
+            </div>
+            <div class="right">
+              <span class="text__line-1"
+                >Making a Housing Wage: Where Teachers, First Responders and Restaurant Workers Can Live Where They Work</span
+              >
+              <div class="text__line-2">
+                <span class="text__line-2__spanf">Xã hội</span>
+                <span class="text__line-2__spans">Quang Anh Tran</span>
+                <span class="text__line-2__spant">20/02/2020</span>
+              </div>
+              <span class="text__line-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit diam at feugiat purus, interdum porta sed. Ac ut hendrerit enim et
+                scelerisque nullam lorem. Libero mi velit id vitae...
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="post__child">
+          <div class="show-375px">
+            <span class="text__line-1">Making a Housing Wage: Where Teachers, First Responders and Restaurant Workers Can Live Where They Work</span>
+            <div class="text__line-2">
+              <span class="text__line-2__spanf">Xã hội</span>
+              <span class="text__line-2__spans">Quang Anh Tran</span>
+              <span class="text__line-2__spant">20/02/2020</span>
+            </div>
+          </div>
+          <div class="post__child-item">
+            <div class="left">
+              <img class="icon" src="./images/icon/heart-white.png" alt="" />
+              <img class="img-child" src="./images/posts/post2.png" alt="" />
+            </div>
+            <div class="right">
+              <span class="text__line-1"
+                >Making a Housing Wage: Where Teachers, First Responders and Restaurant Workers Can Live Where They Work</span
+              >
+              <div class="text__line-2">
+                <span class="text__line-2__spanf">Xã hội</span>
+                <span class="text__line-2__spans">Quang Anh Tran</span>
+                <span class="text__line-2__spant">20/02/2020</span>
+              </div>
+              <span class="text__line-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit diam at feugiat purus, interdum porta sed. Ac ut hendrerit enim et
+                scelerisque nullam lorem. Libero mi velit id vitae...
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <div class="card">
-          <div class="img">
-            <img class="responsive" src="./images/detail/d1.jpg" alt="" />
+      <div class="list__post" style="margin-top: 50px">
+        <div class="related-news">
+          <div class="related-news__section">
+            <h2 class="related-news__title">Tin thịnh hành</h2>
           </div>
-          <div class="text">
-            <h5>Making a Housing Wage: Where Teachers, First Responders and Restaurant Workers Can Live Where They Work</h5>
-            <ul>
-              <li>Xã hội</li>
-              <li>Quang Anh Tran</li>
-              <li>24/02/2020</li>
-            </ul>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit diam at feugiat purus, interdum porta sed. Ac ut hendrerit enim et
-              scelerisque nullam lorem. Libero mi velit id vitae...
-            </p>
+          <div class="related-news__section">
+            <a href="#"> > </a>
+            <a href="#" class="related-news__view-all">Xem tất cả</a>
           </div>
         </div>
-        <div class="card">
-          <div class="img">
-            <img class="responsive" src="./images/detail/d2.jpg" alt="" />
+        <div class="post__child">
+          <div class="show-375px">
+            <span class="text__line-1">Making a Housing Wage: Where Teachers, First Responders and Restaurant Workers Can Live Where They Work</span>
+            <div class="text__line-2">
+              <span class="text__line-2__spanf">Xã hội</span>
+              <span class="text__line-2__spans">Quang Anh Tran</span>
+              <span class="text__line-2__spant">20/02/2020</span>
+            </div>
           </div>
-          <div class="text">
-            <h5>Making a Housing Wage: Where Teachers, First Responders and Restaurant Workers Can Live Where They Work</h5>
-            <ul>
-              <li>Xã hội</li>
-              <li>Quang Anh Tran</li>
-              <li>24/02/2020</li>
-            </ul>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit diam at feugiat purus, interdum porta sed. Ac ut hendrerit enim et
-              scelerisque nullam lorem. Libero mi velit id vitae...
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="category" style="margin-top: 50px">
-        <ul class="cate-title">
-          <li class="left-item">Tin thịnh hành</li>
-          <li class="right-item"><p>Xem tất cả</p></li>
-        </ul>
-
-        <div class="card">
-          <div class="img">
-            <img class="responsive" src="./images/detail/d3.jpg" alt="" />
-          </div>
-          <div class="text">
-            <h5>Making a Housing Wage: Where Teachers, First Responders and Restaurant Workers Can Live Where They Work</h5>
-            <ul>
-              <li>Xã hội</li>
-              <li>Quang Anh Tran</li>
-              <li>24/02/2020</li>
-            </ul>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit diam at feugiat purus, interdum porta sed. Ac ut hendrerit enim et
-              scelerisque nullam lorem. Libero mi velit id vitae...
-            </p>
+          <div class="post__child-item">
+            <div class="left">
+              <img class="icon" src="./images/icon/heart-white.png" alt="" />
+              <img class="img-child" src="./images/posts/post3.png" alt="" />
+            </div>
+            <div class="right">
+              <span class="text__line-1"
+                >Making a Housing Wage: Where Teachers, First Responders and Restaurant Workers Can Live Where They Work</span
+              >
+              <div class="text__line-2">
+                <span class="text__line-2__spanf">Xã hội</span>
+                <span class="text__line-2__spans">Quang Anh Tran</span>
+                <span class="text__line-2__spant">20/02/2020</span>
+              </div>
+              <span class="text__line-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit diam at feugiat purus, interdum porta sed. Ac ut hendrerit enim et
+                scelerisque nullam lorem. Libero mi velit id vitae...
+              </span>
+            </div>
           </div>
         </div>
-        <div class="card">
-          <div class="img">
-            <img class="responsive" src="./images/detail/d4.jpg" alt="" />
+        <div class="post__child">
+          <div class="show-375px">
+            <span class="text__line-1">Making a Housing Wage: Where Teachers, First Responders and Restaurant Workers Can Live Where They Work</span>
+            <div class="text__line-2">
+              <span class="text__line-2__spanf">Xã hội</span>
+              <span class="text__line-2__spans">Quang Anh Tran</span>
+              <span class="text__line-2__spant">20/02/2020</span>
+            </div>
           </div>
-          <div class="text">
-            <h5>Making a Housing Wage: Where Teachers, First Responders and Restaurant Workers Can Live Where They Work</h5>
-            <ul>
-              <li>Xã hội</li>
-              <li>Quang Anh Tran</li>
-              <li>24/02/2020</li>
-            </ul>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit diam at feugiat purus, interdum porta sed. Ac ut hendrerit enim et
-              scelerisque nullam lorem. Libero mi velit id vitae...
-            </p>
+          <div class="post__child-item">
+            <div class="left">
+              <img class="icon" src="./images/icon/heart-white.png" alt="" />
+              <img class="img-child" src="./images/posts/post4.png" alt="" />
+            </div>
+            <div class="right">
+              <span class="text__line-1"
+                >Making a Housing Wage: Where Teachers, First Responders and Restaurant Workers Can Live Where They Work</span
+              >
+              <div class="text__line-2">
+                <span class="text__line-2__spanf">Xã hội</span>
+                <span class="text__line-2__spans">Quang Anh Tran</span>
+                <span class="text__line-2__spant">20/02/2020</span>
+              </div>
+              <span class="text__line-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit diam at feugiat purus, interdum porta sed. Ac ut hendrerit enim et
+                scelerisque nullam lorem. Libero mi velit id vitae...
+              </span>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
     </main>
   </body>
 </html>

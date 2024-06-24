@@ -72,6 +72,10 @@ header {
   padding-bottom: 5px;
 }
 
+.icon_menu #iconOpen {
+  cursor: pointer;
+}
+
 .header-center img {
   width: 133px;
   height: 38px;
@@ -80,6 +84,7 @@ header {
 
 .header-right {
   display: flex;
+  align-items: center;
 }
 
 .header-right div {
@@ -88,6 +93,34 @@ header {
 
 .post_item button:hover {
   cursor: pointer;
+}
+
+.logo_heart,
+.logo_notifi {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.logo_heart img {
+  display: block;
+}
+
+.logo_heart::after,
+.logo_notifi::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.logo_notifi {
+  display: none;
 }
 
 .logo_heart img,
@@ -156,7 +189,7 @@ header {
 
 .menu {
   width: 80%;
-  overflow-x: auto; /* Tạo thanh cuộn ngang khi nội dung vượt quá chiều rộng */
+  overflow-x: auto;
   white-space: nowrap;
 }
 
@@ -170,6 +203,7 @@ header {
 
 .menu li {
   margin: 0 25px;
+  padding: 8px 16px;
 }
 
 .menu a {
@@ -182,7 +216,6 @@ header {
 .menu a:hover {
   width: 128px;
   height: 39px;
-  padding: 4px 16px;
   border-radius: 36px;
   background-color: #007882;
   color: #ffffff;
@@ -548,12 +581,13 @@ header {
   height: 24px;
 }
 
-.list__post .post__child .right .text__line-1 {
+.list__post .post__child .right .text__line-1 a {
   font-size: 18px;
   font-weight: 600;
   line-height: 27px;
   letter-spacing: 0.0015em;
   text-align: left;
+  color: #3b4144;
 }
 
 .list__post .post__child .right .text__line-2 {
@@ -563,7 +597,7 @@ header {
   margin: 10px 0;
 }
 
-.list__post .post__child .right .text__line-2 .text__line-2__spanf {
+.list__post .post__child .right .text__line-2 .text__line-2__spanf a {
   font-size: 14px;
   color: #007882;
 }
@@ -622,4 +656,141 @@ header {
 
 .more a {
   color: #3b4144;
+}
+
+.modal__main {
+  padding-left: 10px;
+  font-family: "Montserrat";
+  display: none;
+  margin-top: 15px;
+}
+
+.modal__main .show {
+  left: 0;
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal__header {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  height: 50px;
+}
+
+.icon__logo {
+  height: 16px;
+  width: 110px;
+  object-fit: contain;
+}
+
+.modal__menu {
+  margin: 30px 0;
+  display: flex;
+  justify-content: left;
+}
+
+.modal__menu ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: -0.03em;
+}
+
+.modal__menu ul li {
+  list-style: none;
+  margin: 25px 0;
+}
+
+.modal__menu ul li a {
+  color: #272727;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.modal__menu .active {
+  color: #d93c23;
+  opacity: 1;
+}
+
+.modal__menu a:hover {
+  color: #d93c23;
+  opacity: 1;
+}
+
+.modal__btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__btn div {
+  margin-bottom: 10px;
+}
+
+.modal__btn--main {
+  height: auto;
+  background-color: #d93c23;
+  border-radius: 30px;
+  width: 100%;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.modal__btn--main a {
+  color: #ffffff;
+}
+
+.modal__btn--secondary {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.modal__btn a {
+  text-decoration: none;
+}
+
+.modal__btn-item--login {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  padding: 8px 24px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.modal__btn-item--login a {
+  color: #3b4144;
+}
+
+.modal__btn-item--register {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  padding: 8px 24px;
+  border-radius: 30px;
+  text-align: center;
+  background-color: #3b4144;
+}
+
+.modal__btn-item--register a {
+  color: #ffffff;
+}
+
+.modal__btn a:hover {
+  cursor: pointer;
+}
+
+.modal__header .icon__close:hover {
+  cursor: pointer;
 }
