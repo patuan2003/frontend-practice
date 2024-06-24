@@ -302,7 +302,8 @@
   }
 
   header {
-    height: 50px;
+    height: 60px;
+    margin-top: 0;
   }
 
   header .header-right .user .user_right img {
@@ -404,8 +405,9 @@
   }
 
   .list__post .post__child .show-375px {
-    padding: 0 10px;
+    padding: 0;
     display: block;
+    margin-bottom: 5px;
   }
 
   .list__post .post__child {
@@ -424,6 +426,7 @@
     font-weight: 600;
     line-height: 21px;
     text-align: left;
+    color: #3b4144;
   }
 
   .list__post .post__child .show-375px .text__line-2 {
@@ -573,5 +576,7 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
     overflow: hidden;
+    font-size: 14px;
+    line-height: 15px;
   }
 }
