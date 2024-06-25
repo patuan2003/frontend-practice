@@ -12,6 +12,17 @@ body {
   letter-spacing: 0.0125em;
 }
 
+.container {
+  width: 1920px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 65% !important;
+  margin: 0 auto;
+}
+
 a {
   text-decoration: none;
 }
@@ -155,12 +166,6 @@ header {
   object-fit: cover;
 }
 
-.container {
-  width: 1200px;
-  width: 80%;
-  margin: 0 auto;
-}
-
 .banner {
   position: relative;
 }
@@ -186,32 +191,32 @@ header {
 }
 
 .menu {
-  width: 80%;
   overflow-x: auto;
   white-space: nowrap;
+  margin-top: 15px;
+  width: 80%;
 }
 
 .menu ul {
   display: flex;
-  justify-content: left;
-  padding-left: 80px;
-  margin: 0;
   list-style: none;
+  text-align: left;
+  height: 40px;
+  align-items: center;
 }
 
 .menu li {
-  margin: 0 25px;
-  padding: 8px 16px;
+  margin-right: 8%;
 }
 
 .menu a {
   text-decoration: none;
   color: black;
   font-size: 16px;
-  padding: 4px 16px;
 }
 
 .menu a:hover {
+  padding: 4px 16px;
   width: 128px;
   height: 39px;
   border-radius: 36px;
@@ -236,6 +241,8 @@ header {
 .new .title p {
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .new .title p img {
@@ -247,7 +254,6 @@ header {
   margin-left: 10px;
   font-size: 24px;
   font-weight: 700;
-  line-height: 48px;
   text-align: left;
 }
 
@@ -258,9 +264,7 @@ header {
 /* img */
 .new .img {
   display: flex;
-  margin: 0 80px;
   gap: 20px;
-  padding: 10px;
 }
 
 .new .img .left {
@@ -337,22 +341,20 @@ header {
 }
 
 .img .text {
-  padding: 10px;
   justify-content: left;
-  font-size: 10px;
   font-weight: 600;
-  line-height: 27px;
+  line-height: 18px;
   text-align: left;
 }
 
 .img .text__line-1 {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 5px;
   color: #3b4144;
 }
 
 .img .text__line-2 {
-  font-size: 12px;
+  font-size: 14px;
   color: #777;
   margin-bottom: 5px;
 }
@@ -371,24 +373,38 @@ header {
 
 .img .text__line-3 {
   opacity: 0.5;
-  font-size: 12px;
+  font-size: 14px;
   color: #555;
 }
 
 /* video */
+.video {
+  margin-top: 50px;
+}
+
 .video .title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 10px;
-  padding: 0 80px;
+}
+
+.video .title .all {
+  opacity: 0.5;
 }
 
 .list-video {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  margin: 0 80px;
+}
+
+.list-video .left {
+  flex-basis: 70%;
+}
+
+.list-video .right {
+  flex-basis: 30%;
 }
 
 .list-video .left .img-container {
@@ -458,7 +474,7 @@ header {
 
 /* right */
 .list-video .right {
-  height: 428px;
+  height: 368px;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -514,7 +530,6 @@ header {
 
 .list-video .right .video__container .text .view-cre_at {
   display: flex;
-  font-size: 14px;
   font-weight: 600;
   line-height: 17px;
   text-align: left;
@@ -522,15 +537,15 @@ header {
 }
 
 .list-video .right .video__container .text .view-cre_at .view {
-  font-size: 14px;
   font-weight: 400;
   line-height: 17px;
   text-align: left;
+  font-size: 12px;
 }
 
 .list-video .right .video__container .text .view-cre_at .cre_at {
-  font-size: 14px;
   font-weight: 600;
+  font-size: 12px;
   line-height: 17px;
   text-align: left;
   opacity: 0.5;
@@ -542,14 +557,17 @@ header {
 }
 
 /* list post */
+.list__post {
+  margin-top: 50px;
+}
+
 .list__post .title {
-  margin: 20px 80px;
+  margin-bottom: 20px;
 }
 
 .list__post .post__child .post__child-item {
   display: flex;
   flex-direction: row;
-  margin: 0 80px;
   gap: 20px;
   margin-bottom: 20px;
 }
